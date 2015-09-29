@@ -1,0 +1,94 @@
+
+/* CSS Reset */
+* {
+	padding: 0;
+	margin: 0;
+}
+
+header li,
+footer li {
+	text-align: center;
+	display: inline;
+	list-style: none;
+	border-right: 1px solid lightgrey;
+	padding-right: 8px;
+	margin-right: 8px;
+}
+
+body {
+	background: #444;
+	padding: 20px;
+	border: 2px solid white;
+	margin: 20px;
+	width: 600px;
+	color: white;
+	font-family: Times New Roman;
+	font-style: serif;
+}
+
+header {
+	text-align: center;
+	padding: 20px;
+	border-bottom: 2px solid white;
+}
+
+header p {
+	font-size: 32px;
+	font-style: italic;
+	margin-bottom: 20px;
+}
+footer {
+	text-align: center;
+	padding: 20px;
+	border-top: 2px solid white;
+}
+
+li {
+	list-style: none;
+	font-family: sans-serif;
+	margin-bottom: 10px;
+
+}
+
+li:last-child {
+	border: none;
+}
+
+img {
+	float: right;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	border: 1px solid white;
+	padding: 4px;
+}
+
+p {
+	font-family: serif;
+	margin-bottom: 20px;
+}
+
+a {
+	color: #66D3A4;
+}
+
+h1,
+h2,
+h3,
+ul {
+	font-family: arial;
+}
+
+h1 {
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+h2 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+ul {
+	margin: 20px;
+}
