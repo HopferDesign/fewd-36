@@ -1,12 +1,26 @@
-
-
 header {
-	/*display: block;*/
-	background-color: green;
+	margin: auto;
+	padding: 20px;
+	background-color: #026690;
+	display: block;
 }
 
-header img
-	{
+header img {
 	margin: auto;
-	/*display: block;*/
-	}
+	border-radius: 100px;
+	border: solid 4px white;
+}
+
+header h1 {
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	font-family: sans-serif;
+}
+
+body li {
+	text-align: center;
+	font-family: sans-serif;
+	display: inline;
+	padding: 20px;
+}

@@ -81,7 +81,7 @@ p {
 body {
 	background-color: white;
 	color: #4D4D4F;
-	margin-left: 60px,
+	margin-left: 60px;
 	margin-right: 60px;
 }
 
@@ -94,4 +94,8 @@ footer {
 	background-color: #026690;
 	padding: 20px;
 	margin-top: 20px;
+}
+
+h3:first-child {
+	border-top: 0px;
 }
