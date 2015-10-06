@@ -1,0 +1,97 @@
+header {
+	margin: auto;
+	padding: 20px;
+	background-color: #026690;
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	display: block;
+}
+
+header p {
+	font-size: 24px;
+	font-family: "Source+Sans+Pro:400", sans-serif;
+	padding-bottom: 10px;
+	border-bottom: none;
+}
+
+header li {
+	display: inline;
+	font-size: 18px;
+	font-family: "Source+Sans+Pro:400", sans-serif;
+	color: white;
+}
+
+header a {
+	color: white;
+}
+
+h1 {
+	color: white;
+	font-family: "Source+Sans+Pro:300", sans-serif;
+	padding: 20px;
+}
+
+h2 {
+	font-size: 24px;
+	font-family: "Source+Sans+Pro:300", sans-serif;
+	color: #026690;
+	text-align: center;
+	background-color: #80b2c7;
+	padding: 10px;
+	margin: 10px 0px 10px 0px;
+}
+
+h3 {
+	font-size: 20px;
+	font-family: "Source+Sans+Pro:600", sans-serif;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	border-top: solid 1px #4D4D4F;
+}
+
+h4 {
+	font-size: 18px;
+	font-family: "Source+Sans+Pro:400", sans-serif;
+	padding-bottom: 10px;
+}
+
+h5 {
+	font-size: 16px;
+	display: inline;
+	font-family: "Source+Sans+Pro:400", sans-serif;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+li {
+	font-size: 16px;
+	font-family: "Source+Sans+Pro:300", sans-serif;
+	line-height: 1.2;
+}
+
+p {
+	font-size: 16px;
+	padding-top: 10px;
+	font-family: "Source+Sans+Pro:300", sans-serif;
+	line-height: 1.2;
+	padding-bottom: 20px;
+}
+
+body {
+	background-color: white;
+	color: #4D4D4F;
+	margin-left: 60px,
+	margin-right: 60px;
+}
+
+img {
+	border-radius: 100px;
+	border: solid 4px white;
+}
+
+footer {
+	background-color: #026690;
+	padding: 20px;
+	margin-top: 20px;
+}

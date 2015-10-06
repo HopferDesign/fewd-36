@@ -1,2 +1,12 @@
-<style>
 
+
+header {
+	/*display: block;*/
+	background-color: green;
+}
+
+header img
+	{
+	margin: auto;
+	/*display: block;*/
+	}
