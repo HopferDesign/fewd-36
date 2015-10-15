@@ -7,7 +7,6 @@ header {
 	padding: 20px;
 	background: linear-gradient(90deg, #0288D1, #01579B);
 	color: white;
-	font-size: 30px;
 	text-align: center;
 	display: block;
 }
@@ -22,6 +21,8 @@ h1 {
 	text-transform: uppercase;
 	padding-top: 10px;
 	font-weight: 300;
+	font-size: 40px;
+
 }
 
 h2 {
@@ -47,8 +48,9 @@ h2 {
     align-self: auto;
 	border-radius: 5px;
 	margin-top: 20px;
-	padding: 20px;
+	padding: 10px 20px;
 	background-color: #0288D1;
+	line-height: 1.5;
 }
 
 .button:hover {
