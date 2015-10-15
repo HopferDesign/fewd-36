@@ -1,18 +1,19 @@
 .page {
 	display: flex;
 	justify-content: flex-start;
+	max-width: 900px;
 
 }
 
 h1 {
 	font-size: 30px;
-	font-weight: bold;
+	font-weight: 700;
 	color: #B56647;
 }
 
 h2 {
 	font-size: 16px;
-	font-weight: bold;
+	font-weight: 700;
 	color: #B56647;
 	padding-top: 20px;
 	padding-bottom: 10px;
@@ -35,7 +36,8 @@ body {
 	background-color: #F0F0DA;
 	font-size: 14px;
 	color: black;
-	font-family: helvetica, sans-serif;
+	font-family: 'Open Sans', sans-serif;
+
 }
 
 .left {
@@ -55,12 +57,11 @@ body {
 
 .times {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	padding-bottom: 10px;
 	text-align: center;
 	border-bottom: 2px solid #F0D899;
 }
-
 
 ol li {
 	list-style-type: decimal;
@@ -83,23 +84,20 @@ ol li {
 .right h2:first-child {
 	padding-top: 0;
 }
-/*.flex-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-content: stretch;
-    align-items: stretch;
-    }
 
-.flex-item:nth-child(1) {
-    order: 0;
-    flex: 1 1 auto;
-    align-self: auto;
-    }
+.image {
+	position: relative;
+}
 
-.flex-item:nth-child(2) {
-    order: 0;
-    flex: 0 1 auto;
-    align-self: auto;
-    }*/
+.image li {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	font-size: 24px;
+	color: white;
+	border: 2px solid white;
+	padding: 10px;
+	border-radius: 30px;
+	width: 25px;
+	text-align: center;
+}
