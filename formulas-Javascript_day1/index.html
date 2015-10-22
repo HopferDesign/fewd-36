@@ -34,22 +34,22 @@
     <script type="text/javascript" src="interface.js"></script>
     <script type="text/javascript">
 
-      function celciusToFahrenheit(celcius) {
-        var fahrenheit = celcius*9/5+32;
-        return fahrenheit;
+      function calcCelciusToFahrenheit(c) {
+        var f = c*9/5+32;
+        return f;
       }
 
-      function fahrenheitToCelcius(fahrenheit) {
-        var celcius = (fahrenheit-32)*(5/9);
-        return celcius;
+      function calcFahrenheitToCelcius(f) {
+        var c = (f-32)*(5/9);
+        return c;
       }
 
-      function calculateTriangleArea(b,h) {
-        area = (b*h)/2;
-        return area;
+      function calcLongestSide(a,b) {
+        var c = Math.sqrt((a * a) + (b * b))
+        return c;
       }
 
-      function calculateCircumference(r) {
+      function calcCircumference(r) {
         var c = 2*Math.PI*r;
         return Math.round(c*100) / 100;
       }
