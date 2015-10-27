@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Week 5🔹FEWD 36</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="../css/fewd-36.css" />
+	<link rel="shortcut icon" href="../images/fewd-36-favicon.png" />
+<style>
+h2 {
+	background: #C9C9C9;
+}	
+</style>
+</head>
+<body>
+
+<header>
+	<h1><a href="../index.html">FEWD 36</a> - JavaScript Cheatsheet</h1>
+</header>
+
+<section>
+
+<h2>Elements</h2>
+<script>console.log("--------- Elements ---------");</script>
+
+<p>To get or set an element's text content, use the <code>.textContent</code> property</p>
+
+<h4>Syntax:</h4>
+<code>Element.textContent</code>
+
+<p>Get an element's text content</p>
+<code>
+<pre>
+var brainy = document.querySelector(".brainy");
+var text = brainy.textContent;
+</pre>
+</code>
+
+<p>Change an element's text content</p>
+<code>
+<pre>
+var clumsy = document.querySelector(".clumsy");
+clumsy.textContent = "Whoops!";
+</pre>
+</code>
+
+<h4>Example:</h4>
+<p class="sample">This is some sample text.</p>
+
+<script>
+// get the element from the DOM, save to variable
+var sample = document.querySelector(".sample");
+
+// read the element's text content
+var text = sample.textContent;
+console.log(text);
+
+// change the element's text content
+sample.textContent = "I changed my mind, this is the real text";
+</script>
+
+
+<!-- 
+1
+Span Element
+- textContent
+
+Input Element
+- value -->
+
+<!-- 
+1.2
+Image
+- src
+ -->
+
+<h2>Strings</h2>
+<script>console.log("--------- Strings ---------");</script>
+
+<!-- // var a = "Hello World!";
+	// console.log (a.length);
+
+	// var number = "36";
+	// console.log (parseInt(number));
+
+	// var converttostring = 244;
+	// console.log (converttostring.toString());
+
+length
+convert string to number parseInt()
+take a phone number, split it into three parts string.split()
+
+Number
+convert to string. toString() -->
+
+
+<h2>Events</h2>
+<script>console.log("--------- Events ---------");</script>
+<ul>
+    <li class="red">Red</li>
+    <li class="green">Green</li>
+    <li class="blue">Blue</li>
+</ul>
+
+<script>
+
+var red = document.querySelector(".red");
+var green = document.querySelector(".green");
+var blue = document.querySelector(".blue");
+
+red.addEventListener("click", sayTheColor);
+green.addEventListener("click", sayTheColor);
+blue.addEventListener("click", sayTheColor);
+
+
+function sayTheColor(event) {
+    console.log(event.target);
+    console.log(event.target.textContent);
+}
+
+</script>
+
+<h2>ClassList</h2>
+<script>console.log("--------- ClassList API ---------");</script>
+
+<p class="olive">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+<style>
+.olive {
+    color: olive;
+    font-size: 50px;
+}
+.salmon {
+    color: salmon;
+}
+.purple {
+    color: purple;
+    font-family: arial;
+    background-color: pink;
+}
+</style>
+<script>
+
+// Structure
+var test = document.querySelector(".olive");
+console.log(test.className);
+
+//Event
+test.addEventListener("click", changeTextColor);
+
+// Event Handler 
+function changeTextColor(event) {
+  	test.classList.remove("olive");
+    test.classList.add("salmon");
+    test.classList.toggle("purple");
+    console.log(test.className);
+  }
+  
+</script>
+
+<h2>Window Object</h2>
+<script>console.log("--------- Window ---------");</script>
+<!-- 
+window.location.href
+Location
+History
+go back one page window.history.back() -->
+
+<h2>Document</h2>
+<script>console.log("--------- Document ---------");</script>
+
+<!-- 
+createElement()
+
+
+Element
+appendChild()
+
+
+ -->
+</section>
+
+
+</body>
+</html>

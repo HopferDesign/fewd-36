@@ -1,7 +1,13 @@
+html {
+	height: 100%;
+}
+
 body {
 	text-align: center;
 	font-family: sans-serif;
 	color: #212121;
+	padding: 50px;
+	height: 100%;
 }
 
 h1 {
@@ -42,7 +48,8 @@ li {
 }
 
 .aqua {
-	background: aqua;
+	background: repeating-linear-gradient(-45deg, skyblue, skyblue 10px, cornflowerblue 10px, cornflowerblue 20px);
+	/*background: aqua;*/
 }
 
 .lightcoral {
