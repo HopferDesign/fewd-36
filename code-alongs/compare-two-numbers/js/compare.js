@@ -6,20 +6,31 @@ var button =document.querySelector(".compare");
 button.addEventListener("click", calculate);
 
 function calculate(event) {
-	textInputVal = document.getElementById("number1").value;
 
-	// console.log("calculate");
+	// get date from DOM
+	var textInputVal1 = parseFloat(number1.value);
+	var textInputVal2 = parseFloat(number2.value);
+	console.log(textInputVal1);
+	console.log(textInputVal2);
+
+	// process data
+	if(textInputVal1 > textInputVal2) {
+		var r = ">";
+		// console.log("greater than");
+	}
+
+	if(textInputVal1 < textInputVal2) {
+		var r = "<";
+		// console.log("less than");
+	}
+
+	if(textInputVal1 == textInputVal2) {
+		var r = "=";
+		// console.log("equal");
+	}
+
+// update page
+
+	sign.textContent = r;
+
 }
-
-	//if and if else ---need these
-
-if number1 > number2;
-	console.log("greater than");
-
-if else number1 < number2;
-	console.log("less than");
-
-else number1 = number2;
-	console.log("equals");
-
-	sign.textContent = xxx
