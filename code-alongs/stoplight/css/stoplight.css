@@ -1,0 +1,95 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.left,
+.right {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin: 50px;
+}
+
+.box {
+	width: 200px;
+	height: 510px;
+	background-color: #222;
+	border-radius: 20px;
+	margin-top: 20px;
+
+}
+
+.red,
+.yellow,
+.green {
+	padding: 20px;
+	margin: 10px;
+	width: 150px;
+	height: 150px;
+	border-radius: 75px;
+	text-align: center;
+	vertical-align: center;
+	text-indent: -5000px;
+}
+
+.red {
+	color: white;
+	background-color: red;
+}
+
+.yellow {
+	color: white;
+	background-color: yellow;
+}
+
+.green {
+	color: white;
+	background-color: green;
+}
+
+.stop,
+.slow,
+.go {
+	width: 100px;
+	height: 50px;
+	background-color: #444;
+	color: white;
+	font-family: sans-serif;
+	font-size: 20px;
+	text-align: center;
+	vertical-align: center;
+	padding: 10px;
+	margin: 20px;
+	border-radius: 10px;
+	border-style: none;
+}
+
+.right ul {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.hidden {
+	background-color: black;
+}
+
+.stop:hover {
+	background-color: red;
+}
+
+.slow:hover {
+	background-color: yellow;
+	color: black;
+}
+
+.go:hover {
+	background-color: green;
+}
