@@ -12,7 +12,7 @@ go.addEventListener("click", changeColor);
 
 function changeColor(event) {
 	
-	
+
 	// var swatch = event.target;
 	// var color = swatch.className;
 	

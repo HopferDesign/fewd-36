@@ -4,6 +4,7 @@
 	<title></title>
 </head>
 <body>
+<button>Color Me</button>
 
 <ul>
 	<li>blue</li>
@@ -12,13 +13,30 @@
 </ul>
 
 <script>
-	
+//Structure
 var list = document.querySelector("ul");
+var button = document.querySelector("button");
 
-var newItem = document.createElement("LI");
-newItem.textContent = "yellow";
+button.addEventListener("click", colorMe);
 
-list.appendChild(newItem);
+//Event Handler function
+function colorMe() {
+
+	//Asks user via prompt
+	var color = prompt("Pick a color, any color?");
+
+	//Step 1 - create the elements
+	var newItem = document.createElement("LI");
+
+	//Step 2 - decorate the elements
+	newItem.textContent = color;
+	newItem.className = color;
+	
+	//Step 3 - insert the elements
+	list.appendChild(newItem);
+}
+
+
 
 </script>
 

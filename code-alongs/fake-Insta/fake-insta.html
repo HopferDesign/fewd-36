@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<style></style>
+</head>
+<body>
+
+<label>
+	Name
+	<input class="username">
+</label>
+
+<label>
+	Comment
+	<input class="comment">
+</label>
+
+<button>Post</button>
+
+<ul>
+	<li>blue</li>
+	<li>green</li>
+	<li>red</li>
+</ul>
+
+<script>
+//Structure
+var list = document.querySelector("ul");
+var button = document.querySelector("button");
+var username = document.querySelector(".username");
+var comment = document.querySelector(".comment");
+
+
+
+button.addEventListener("click", addComment);
+comment.addEventListener("keyup", addComment);
+
+//Event Handler function
+function addComment(event) {
+	console.log(event);
+
+	var key = event.keyCode;
+
+	// logs comment w enter
+	// keycode 13 is the enter key
+	if (key && key != 13) {
+		return;
+	}
+
+	var usernameValue = username.value;
+	var commentValue = comment.value;
+
+
+	//Step 1 - create the elements
+	var newItem = document.createElement("LI");
+
+	//Step 2 - decorate the elements
+	newItem.textContent = usernameValue + ": " + commentValue;
+	
+	//Step 3 - insert the elements
+	list.appendChild(newItem);
+}
+
+
+
+</script>
+
+</body>
+</html>
