@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Streets Array</title>
+</head>
+<body>
+
+<style>
+	
+input,
+button {
+	width: 200px;
+	padding: 5px 10px;
+	display: inline-block;
+	border: 1px solid gray;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+button {
+	width: 100px;
+	background-color: blue;
+	border-radius: 6px;
+	color: white;
+}
+
+</style>
+
+<form>
+	<input class="input" placeholder="Street">
+	<button>Add</button>
+	<button class="route">Route</button>
+</form>
+
+<ul></ul>
+
+<script>
+//Structure
+var form = document.querySelector("form");
+var street = document.querySelector("input");
+var list = document.querySelector("ul");
+var route = document.querySelector(".route");
+
+//Events
+form.addEventListener("submit", addStreet);
+route.addEventListener("click", showRoute);
+
+//Setup
+var streets = [];
+
+
+//Event Handler Functions
+
+function addStreet(e) {
+	e.preventDefault();
+	streets.push(street.value);
+
+	//Clean up
+	form.reset();
+}
+
+function showRoute(e) {
+	streets.forEach(directions);
+}
+
+function directions(item) {
+
+	//Step 1 - create element
+	var street1 = document.createElement("li");
+
+	//Step 2 - style element
+	street1.textContent = item;
+
+	//Step 3 - Apply element to DOM
+	list.appendChild(street1);
+}
+
+</script>
+
+</body>
+</html>
