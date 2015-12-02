@@ -1,0 +1,57 @@
+html {
+	height: 100%;
+}
+
+body {
+	text-align: center;
+	font-family: sans-serif;
+	color: #212121;
+	padding: 50px;
+	height: 100%;
+}
+
+h1 {
+	font-size: 44px;
+	padding-top: 30px;
+}
+
+h2 {
+	font-size: 20px;
+	padding: 20px;
+}
+
+ul {
+	display: flex;
+	justify-content: center;
+	flex: 1 1 auto;
+	margin-top: 20px;
+}
+
+li {
+	padding: 20px;
+	border: 4px solid black;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-indent: -5000px;
+}
+
+.honeydew {
+	background: honeydew;
+}
+
+.lawngreen {
+	background: lawngreen;
+}
+
+.aqua {
+	background: repeating-linear-gradient(-45deg, skyblue, skyblue 10px, cornflowerblue 10px, cornflowerblue 20px);
+	/*background: aqua;*/
+}
+
+.lightcoral {
+	background: lightcoral;
+}

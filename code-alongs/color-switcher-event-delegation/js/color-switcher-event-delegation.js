@@ -42,3 +42,12 @@ function changeColor(event) {
 	// body.setAttribute("class", color);
 }
 
+
+
+var theme = {
+	color: "honeydew"
+}
+
+localStorage.setItem("theme", JSON.stringify(theme))
+
+var savetheme = JSON.parse(localStorage.getItem("theme"));
