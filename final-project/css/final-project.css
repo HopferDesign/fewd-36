@@ -15,6 +15,7 @@ h4 {
 	min-height: 70px;
 	width: 100%;
 	display: flex;
+	display:-webkit-flex;
 	justify-content: space-between;
 	background-color: #212121;
 	padding: 25px;
@@ -23,12 +24,12 @@ h4 {
     position: fixed;
     top: 0px;
     z-index: 3;
-
 }
 
 .header ul {
 	color: yellow;
 	display: flex;
+	display:-webkit-flex;
 	justify-content: flex-end;
 	margin-left: 20px;
 	font-size: 14px;
@@ -44,7 +45,6 @@ h4 {
 .header li {
 	margin-left: 20px;
 	min-width: 20px;
-
 }
 
 .header h2 {
@@ -61,6 +61,7 @@ h4 {
 
 .images ul {
 	display: flex;
+	display:-webkit-flex;
 	justify-content: center;
 	flex-flow: row wrap;
 	padding-top: 20px;
@@ -89,6 +90,7 @@ footer {
 
 .about-columns {
 	display: flex;
+	display:-webkit-flex;
 	flex-direction: row;
 	margin: 20px;
 }
@@ -147,8 +149,7 @@ h3 {
 .project-details {
 	max-width: 1000px;
 	padding-top: 20px;
-/*	border-top: 1px solid #212121;
-*/	border-bottom: 1px solid #212121;
+	border-bottom: 1px solid #212121;
 	margin: auto;
 	margin-top: 20px;
 }
@@ -164,6 +165,7 @@ h3 {
 
 .details {
 	display: flex;
+	display:-webkit-flex;
 	flex-direction: row;
 	padding: 20px;
 }
@@ -207,7 +209,8 @@ h3 {
 .grid img:hover {
 	box-shadow: 0 0 3px 3px #ccc;
 }
-/*Mobile*/
+
+/*media queries*/
 
 @media (max-width: 600px) {
 	
@@ -240,12 +243,6 @@ h3 {
 		display: block;
 		justify-content: space-between;
 	}
-
-	/*.carousel {
-		max-width: 85%;
-		margin: auto;
-	}*/
-
 }
 
 @media (max-width: 700px) {
@@ -258,17 +255,3 @@ h3 {
 		-webkit-columns: 3;
 	}
 }
-
-/*Tablet*/
-
-/*@media (max-width: 724px) {
-
-	.images {
-		margin: auto;
-	}
-
-
-}
-
-
-*/

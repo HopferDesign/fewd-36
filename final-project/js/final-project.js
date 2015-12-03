@@ -8,6 +8,7 @@ $(document).ready(function(){
 	speed: 500,
 	fade: true,
 	cssEase: 'linear',
+	adaptiveHeight: true,
 	responsive: [
 		{
 			breakpoint: 768,
